@@ -1,0 +1,463 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/* 
+body{
+    font-family: 'Yantramanav-Regular';
+} */
+
+.bloqueHeader{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.bloqueHeader img{
+    width: 100px;
+}
+
+.bloqueHeader nav ul{
+    list-style: none;
+    display: flex;
+}
+
+.bloqueHeader nav ul li{
+    padding: 20px 20px;
+}
+
+.bloqueHeader nav ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.bloqueHeader nav ul li:nth-child(1) a{
+    color: #1F3F68;
+}
+
+/*-----------------Segundo bloque - SECTION--------------------*/
+.container{
+    padding: 20px 350px;
+    margin-bottom: 100px;
+}
+
+
+.bloqueSection1{
+    background-image: url('../images/fondo1.jpg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: space-evenly;
+    height: 300px;
+    padding: 40px 540px;
+}
+
+.title, .parrafo{
+    text-align: center;
+    color: white;
+}
+
+.title{
+    font-size: 40px;
+}
+
+.parrafo{
+    font-size: 20px;
+}
+
+
+
+.box{
+    margin: 100px auto;
+    width: 100%;
+    height: 50px;
+}
+
+.container-1{
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+    display: flex;
+    margin: 20px 10px;
+}
+
+.container-1 span{
+    display: flex;
+    align-items: center;
+}
+
+.container-1 span img{
+    width: 20px;
+    position: absolute;
+    left: 10px;
+}
+
+.container-1 input#search{
+    width: 100%;
+    height: 50px;
+    background: #F4F4F4;
+    border: none;
+    font-size: 14px;
+    float: right;
+    color: #63717f;
+    padding-left: 45px;
+    border-radius: 5px;
+}
+
+.popularsArticles h3{
+    margin: 20px 10px;
+    color: #3D74B0;
+}
+
+.popularsArticles .articulos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.popularsArticles .articulos article{
+    display: flex;
+    margin: 20px 10px;
+}    
+
+
+.popularsArticles .articulos :nth-child(1){
+    grid-column: 1/-1;
+}
+
+.popularsArticles .articulos .debajo{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.popularsArticles .articulos article h2{
+    margin: 20px 0;
+    font-size: 30px;
+    color: #1F3F68;
+}
+
+.popularsArticles .articulos article p{
+    margin: 20px 20px 20px 0;
+    
+}
+
+.popularsArticles .articulos .debajo img {
+    width: 100%;
+}
+
+.popularsArticles .articulos .bloqueInferiorArticle{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.popularsArticles .articulos .bloqueInferiorArticle .info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.popularsArticles .articulos .bloqueInferiorArticle .info span:nth-child(1){
+    color: #1F3F68;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.popularsArticles .articulos .debajo .bloqueInferiorArticle .info{
+    width: 60%;
+}
+
+.popularsArticles .articulos .bloqueInferiorArticle img{
+    width: inherit;
+}
+
+/*---------------------------------------------------------------*/
+
+.division{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.division span{
+    margin: 20px 0 20px auto;
+}
+
+/*---------------------------------------------------------------*/
+
+.allArticles h3{
+    margin: 20px 0;
+    color: #5D8BBD;
+}
+
+.allArticles article{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: 30px;
+}
+
+.allArticles article img{
+    padding-right: 20px;
+}
+
+.allArticles .articulos article h2{
+    margin: 10px 0;
+    font-size: 20px;
+    color: #1F3F68;
+}
+
+.allArticles .articulos article p{
+    margin: 20px 20px 20px 0;   
+}
+
+.allArticles .articulos .bloqueInferiorArticle{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+.allArticles .articulos .bloqueInferiorArticle .info{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+
+.allArticles .articulos .bloqueInferiorArticle .info span:nth-child(1){
+    color: #1F3F68;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.allArticles .articulos .oldAndNewPost{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.allArticles .articulos .oldAndNewPost .left{
+    display: flex;
+    align-items: center;
+}
+
+.allArticles .articulos .oldAndNewPost .right{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.allArticles .articulos .oldAndNewPost span{
+    padding: 0 20px;
+    color: #5D8BBD;
+}
+
+/*--------------------------------------------------------------------------*/
+
+.intersted{
+    background-color: #316099;
+    height: 350px;
+    width: 100%;
+    border-radius: 0 150px 0 0;
+    display: flex;
+}
+
+.intersted .interstedTexto{
+    color: white;
+    padding: 60px 0 60px 350px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.intersted .interstedTexto h2{
+    font-size: 35px;
+    font-weight: 100;
+    padding-right: 240px;
+    margin-bottom: 30px;
+}
+
+.intersted .interstedTexto p{
+    font-weight: 100;
+    color: #ADBFD6;
+    line-height: 1.5;
+}
+
+.intersted .interstedButton{
+    padding: 100px 400px 100px 0;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.intersted .interstedButton button{
+    background: #5A98D0;
+    width: 200px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+}
+
+/*-------------------------FOOTER-------------------------------*/
+
+footer{
+    background-color: #316099;
+    color: white;
+    padding: 60px;
+}
+
+footer .footerContenido{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer .footerContenido a{
+    color: white;
+    text-decoration: none;
+}
+
+footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos:nth-child(1){
+    align-items: center;
+    justify-content: flex-start;
+}
+
+footer .footerContenido .bloqueFooter2,.bloqueFooter3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer .footerContenido .bloqueFooter2 a:nth-child(1) {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer .footerContenido .bloqueFooter3 a:nth-child(1) {
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+footer .copyright{
+    margin-top: 60px;
+    text-align: center;
+    color: #83A0C2;
+}
+
+/*----------------------------------------RESPONSIVE---------------------------------------*/
+@media (max-width: 1200px){
+    
+}
+
+@media(max-width: 500px){
+    .bloqueHeader{
+        padding: 20px 0;
+    }
+
+    .bloqueHeader nav ul li {
+        padding: 20px 5px;
+    }
+
+    .bloqueSection1 {
+        padding: 0;
+    }
+
+    .container{
+        padding: 0;
+    }
+
+    .container-1 {
+        margin: 20px 0;
+        padding: 0 5px;
+    }
+
+    .popularsArticles .articulos {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .popularsArticles .articulos article:nth-child(1) {
+        display: none;
+    }
+
+    .division span {
+        margin: 20px 10px 20px auto;
+    }
+
+    .allArticles h3 {
+        padding: 0 10px;
+    }
+
+    .allArticles article {
+        flex-direction: column-reverse;
+        padding: 10px;
+    }
+
+    .allArticles article img {
+        padding-right: 0;
+    }
+
+    .intersted {
+        flex-direction: column;
+    }
+
+    .intersted .interstedTexto {
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .intersted .interstedTexto h2 {
+        margin: 0;
+        padding: 40px;
+    }
+    
+    .intersted .interstedButton {
+        padding: 0;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+
+    footer .footerContenido {
+        flex-direction: column;
+    }
+
+    footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos:nth-child(1) {
+        align-items: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    footer .footerContenido .bloqueFooter1 .bloqueFooter1Hijos {
+        width: 60%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    footer .footerContenido .bloqueFooter2, .bloqueFooter3 {
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    footer .footerContenido a {
+        padding: 5px;
+    }
+}
